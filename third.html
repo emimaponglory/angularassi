@@ -1,0 +1,18 @@
+<div class="up">
+	<form name="formf">
+	<label>Year</label>
+	<input type="text" ng-model="selectedyear" ng-disabled="true">
+	<br><br>
+	<label>Over Value</label>
+	<input type="text" name="overvalue" ng-model="Over" ng-required="true">
+	<!-- <span ng-show="formf.overvalue && formf.overvalue.$error.minlength">Value Must be in (0-10000) </span> -->
+	<br><br>
+
+	<label>Under Value</label>
+	<input type="text" ng-model="Under">
+	<br><br>
+
+	<button ng-model="edit" ng-click="edited(selectedyear,Over,Under)">Done</button>
+	<button ng-model="close" ng-click="show=false">Close</button>
+	</form>
+</div>

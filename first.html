@@ -1,0 +1,24 @@
+		<label>Year</label>
+    	<select ng-model="selectyear"  >
+    		<option ng-repeat="x in year">{{x}}</option>
+    	</select>
+
+    	<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+
+    	<button ng-click="pickd(selectyear)">Search</button>
+    	<br><br>
+    	<label>Value</label>
+    	<input type="text" ng-model="value">
+
+    	<br><br>
+    	<label>Filter Value</label>
+    	<select ng-model="filtervalue">
+    		<option>Over500</option>
+    		<option>Under500</option>
+    	</select>
+        <button ng-click="pick(value,filtervalue)">Search</button>
+
+
+    	<label><h3><strong>Search a Data / Filter a Data</strong></h3></label>
+		<!-- <button ng-click="add()">Add a Record</button> -->

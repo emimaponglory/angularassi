@@ -1,0 +1,22 @@
+        <br><br>
+        <table border="1">
+    		<thead>
+    			<th ng-click="sortData('year')"><a href="">Year</a></th>
+    		    <th ng-click="sortData('under500')"><a href=""> Over 500 </a></th>
+                <th ng-click="sortData('above500')"><a href=""> Under 500 </a></th>
+    			<th></th>
+    		</thead>
+    		<tr ng-repeat="x in temp | datafilter:s:e | orderBy:sortColoumn:reverseSort">
+    			<td>{{x.Year}}</td>
+    			<td>{{x.Over}}</td>
+    			<td>{{x.Under}}</td>
+    			<td>
+                    <button ng-click="edit(x)">Edit</button><br>
+                    <button ng-click="remove(x.Year)">Delete</button>
+                </td>
+    		</tr>
+    	</table>
+
+        <span ng-repeat="page in pagination" >
+          <button class="but" ng-model="page" ng-disabled="dis" ng-click="select(page)">{{page}}</button>
+        </span>

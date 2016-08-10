@@ -1,0 +1,55 @@
+<!doctype html>
+<html ng-app="app1">
+  <head>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="pro.js"></script>
+    <style>
+      .out{
+        /*border:1px solid black;*/
+        width:600px;
+        text-align: center;
+        margin:auto;
+        padding-bottom: 10px;
+      }
+      table{
+      	margin: auto;
+      	width: 550px;
+        border-collapse: collapse;
+            }
+      a{
+        text-decoration: none;
+        color:blue;
+      }
+
+       .but{
+            margin-top: 10px;
+       }
+       .up{
+            margin-top: 20px;
+       }
+       .but : after{
+            background: red;
+       }
+    </style>
+
+  </head>
+  <body>
+    <div ng-controller="main">
+    	<div class="out">
+
+    	<h1>Crime Data Analysis</h1>
+
+    <directive1></directive1>
+
+    <directive2></directive2>
+
+    <directive3 ng-show="show" ng-controller="update"></directive3>
+
+    <directive4 ng-show="display" ng-controller="update">
+
+    </directive4>
+
+    	</div>
+    </div>
+  </body>
+</html>
